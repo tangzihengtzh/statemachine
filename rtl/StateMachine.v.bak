@@ -1,0 +1,33 @@
+module StateMachine 
+(
+    input wire sys_clk,
+    input wire sys_rst,
+
+    input [3:0] key,
+    output reg [3:0]ledpin
+);
+
+	reg [1:0]encode4_2;
+	
+	initial begin
+		ledpin<=4'b1111;
+	end
+	
+	always@(*)begin
+		case (key)
+            4'b1110:encode4_2<=2'b00;
+            4'b1101:encode4_2<=2'b01;
+            4'b1011:encode4_2<=2'b10;
+            4'b0111:encode4_2<=2'b11;
+        endcase
+	end
+	
+	wire key_down;
+	assign key_down=~(key[0]&key[1]&key[2]&key[3]);
+	
+	always@(posedge key_down)begin
+		ledpin[0]<=~ledpin[0];
+	end
+
+	 
+endmodule

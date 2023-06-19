@@ -1,0 +1,16 @@
+
+State Machine - |StateMachine|nex_st
+Name nex_st.INIT nex_st.S4 nex_st.S3 nex_st.S2 nex_st.S1 
+nex_st.INIT 0 0 0 0 0 
+nex_st.S1 1 0 0 0 1 
+nex_st.S2 1 0 0 1 0 
+nex_st.S3 1 0 1 0 0 
+nex_st.S4 1 1 0 0 0 
+
+State Machine - |StateMachine|cur_st
+Name cur_st.INIT cur_st.S4 cur_st.S3 cur_st.S2 cur_st.S1 
+cur_st.INIT 0 0 0 0 0 
+cur_st.S1 1 0 0 0 1 
+cur_st.S2 1 0 0 1 0 
+cur_st.S3 1 0 1 0 0 
+cur_st.S4 1 1 0 0 0 

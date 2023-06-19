@@ -1,0 +1,17 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C(10|5)/EP4CE(10|6) (0x020F10DD)" sof_file="output_files/SatatMachine.sof">
+  <display_tree gui_logging_enabled="0">
+  </display_tree>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="column width" size="23" value="34,34,140,74,68,247,303,88,98,98,88,155,346,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="frame size" size="2" value="2560,1566"/>
+    <multi attribute="jtag widget size" size="2" value="532,164"/>
+  </global_info>
+</session>
